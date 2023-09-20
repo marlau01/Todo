@@ -33,3 +33,8 @@ test("Mark as done", async t => {
         
     
 });
+
+test("Create new todo", async t => {
+    await t
+        .expect(Selector("ul.todo-list li.todo").count).eql(0)
+    });
