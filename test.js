@@ -10,7 +10,7 @@ test("Create new todo", async t => {
         // Arrange
         .typeText(Selector(".new-todo"), "hellooooo")
         // Act
-        .pressKey("enter")
+        .pressKey("enter"
         // Assert
         .expect(Selector("ul.todo-list li.todo").count).eql(1);
 });
