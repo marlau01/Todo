@@ -6,7 +6,7 @@ fixture`Demo`
 test("Create new todo", async t => {
     await t
         // Pre-assertion
-        .expect(Selector("ul.todo-list li.todo").count).eql(0)
+        .expect(Selector("ul.todo-list li.todos").count).eql(0)
         // Arrange
         .typeText(Selector(".new-todo"), "hellooooo")
         // Act
